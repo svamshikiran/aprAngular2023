@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Student Details</h2>
+    <table class="table table-sm table-bordered m-t-4" style="width:100%">
+      <tr>
+        <th>ROLLNO</th>
+        <th>NAME</th>
+        <th>CITY</th>
+        <th>CREATED BY</th>
+        <th>MODIFIED BY</th>
+        <th>CREATED DATE</th>
+        <th>MODIFIED DATE</th>
+        <th>COURSE ID</th>
+      </tr>
+      <tr *ngFor="let stu of students">
+        <td>{{stu.rollno}}</td>
+        <td>{{stu.name}}</td>
+        <td>{{stu.city}}</td>
+        <td>{{stu.createdby}}</td>
+        <td>{{stu.modifiedby}}</td>
+        <td>{{stu.createddate}}</td>
+        <td>{{stu.modifieddate}}</td>
+        <td>{{stu.courseid}}</td>
+      </tr>
+    </table>
+</div>
